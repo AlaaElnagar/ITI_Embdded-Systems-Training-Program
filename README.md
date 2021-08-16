@@ -1,4 +1,4 @@
-# Embedded systems Cours 
+# Embedded systems Course
 
 ![Embedded picture](https://wallpapercave.com/wp/wp4365683.jpg)
 
