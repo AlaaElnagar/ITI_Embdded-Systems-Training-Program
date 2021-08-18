@@ -32,6 +32,12 @@ void main (){
 	DIO_VidSetPinDirection(KPD_u8PORT ,KPD_u8ROW1_PIN , input  )  ;
 	DIO_VidSetPinDirection(KPD_u8PORT ,KPD_u8ROW2_PIN , input  )  ;
 	DIO_VidSetPinDirection(KPD_u8PORT ,KPD_u8ROW3_PIN , input  )  ;
+//pull up
+	DIO_VidSetPinValue(KPD_u8PORT ,high , KPD_u8ROW0_PIN ) ;
+	DIO_VidSetPinValue(KPD_u8PORT ,high , KPD_u8ROW1_PIN ) ;
+	DIO_VidSetPinValue(KPD_u8PORT ,high , KPD_u8ROW2_PIN ) ;
+	DIO_VidSetPinValue(KPD_u8PORT ,high , KPD_u8ROW3_PIN ) ;
+
 
 	CLCD_VidInit () ;
 
@@ -43,6 +49,10 @@ void main (){
 
 		if (Local_u8KPDResult != NOT_PRESSED){
 
+			if (Local_u8KPDResult == '7'){
+
+
+			}
 			 CLCD_VidSendData(Local_u8KPDResult) ;
 
 		}
