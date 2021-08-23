@@ -1,1 +1,1 @@
-#[Note]The Lectures notes extracted from IMT school materials 
+# [Note]The Lectures notes extracted from IMT school materials 
